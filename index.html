@@ -1,13 +1,489 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ruben Jimenez</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ruben Jimenez | Business Developer - Cybersecurity</title>
+
+  <meta name="description"
+        content="Tarjeta profesional de Ruben Jimenez, Business Developer especializado en Cybersecurity GBM Dominicana.">
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px 20px;
+
+      background:
+        radial-gradient(circle at top right, #123b5d, transparent 35%),
+        radial-gradient(circle at bottom left, #0b263b, transparent 40%),
+        #06131f;
+
+      color: white;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 430px;
+
+      background: rgba(255, 255, 255, 0.07);
+
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 24px;
+
+      padding: 38px 30px;
+
+      text-align: center;
+
+      box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.35);
+
+      backdrop-filter: blur(12px);
+    }
+
+
+    /* FOTO */
+
+    .photo {
+      width: 135px;
+      height: 135px;
+
+      border-radius: 50%;
+
+      object-fit: cover;
+
+      border: 4px solid #1fa2ff;
+
+      padding: 3px;
+
+      margin-bottom: 20px;
+
+      box-shadow:
+        0 0 25px rgba(31, 162, 255, 0.35);
+    }
+
+
+    /* LOGO GBM */
+
+    .logo-gbm {
+
+      display: block;
+
+      max-width: 140px;
+      max-height: 60px;
+
+      object-fit: contain;
+
+      margin:
+        0 auto
+        22px auto;
+
+    }
+
+
+    /* NOMBRE */
+
+    h1 {
+
+      font-size: 30px;
+
+      margin-bottom: 8px;
+
+      letter-spacing: -0.5px;
+
+    }
+
+
+    /* CARGO */
+
+    .role {
+
+      color: #53c8ff;
+
+      font-size: 17px;
+
+      font-weight: bold;
+
+      margin-bottom: 7px;
+
+    }
+
+
+    /* EMPRESA */
+
+    .company {
+
+      color: #d5e4ed;
+
+      font-size: 15px;
+
+      margin-bottom: 25px;
+
+    }
+
+
+    /* LINEA */
+
+    .divider {
+
+      width: 50px;
+
+      height: 3px;
+
+      border-radius: 10px;
+
+      background: #1fa2ff;
+
+      margin:
+        0 auto
+        25px;
+
+    }
+
+
+    /* DESCRIPCION */
+
+    .description {
+
+      font-size: 14px;
+
+      line-height: 1.7;
+
+      color: #c7d5df;
+
+      margin-bottom: 28px;
+
+    }
+
+
+    /* BOTONES */
+
+    .buttons {
+
+      display: flex;
+
+      flex-direction: column;
+
+      gap: 12px;
+
+    }
+
+
+    .button {
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      gap: 10px;
+
+      width: 100%;
+
+      padding: 14px;
+
+      border-radius: 12px;
+
+      text-decoration: none;
+
+      color: white;
+
+      font-weight: bold;
+
+      font-size: 15px;
+
+      transition: all 0.25s ease;
+
+      border:
+        1px solid
+        rgba(255,255,255,0.12);
+
+      background:
+        rgba(255,255,255,0.08);
+
+    }
+
+
+    .button:hover {
+
+      transform:
+        translateY(-2px);
+
+      background:
+        rgba(255,255,255,0.15);
+
+    }
+
+
+    /* WHATSAPP */
+
+    .whatsapp {
+
+      background: #25D366;
+
+      border-color: #25D366;
+
+    }
+
+
+    .whatsapp:hover {
+
+      background: #1fb85a;
+
+    }
+
+
+    /* LINKEDIN */
+
+    .linkedin {
+
+      background: #0A66C2;
+
+      border-color: #0A66C2;
+
+    }
+
+
+    .linkedin:hover {
+
+      background: #0856a3;
+
+    }
+
+
+    /* GUARDAR CONTACTO */
+
+    .contact {
+
+      background:
+        linear-gradient(
+          135deg,
+          #168eea,
+          #075a9c
+        );
+
+      border: none;
+
+    }
+
+
+    /* FOOTER */
+
+    .footer {
+
+      margin-top: 28px;
+
+      font-size: 11px;
+
+      color: #7893a5;
+
+    }
+
+
+    /* MOVIL */
+
+    @media (max-width: 480px) {
+
+      .card {
+
+        padding:
+          32px
+          22px;
+
+      }
+
+
+      h1 {
+
+        font-size: 26px;
+
+      }
+
+
+      .photo {
+
+        width: 125px;
+
+        height: 125px;
+
+      }
+
+
+      .logo-gbm {
+
+        max-width: 120px;
+
+      }
+
+    }
+
+  </style>
+
 </head>
-<body style="font-family:Arial;text-align:center;margin-top:80px;">
-    <h1>Ruben Jimenez</h1>
-    <h3>Business Developer | Cybersecurity</h3>
-    <p>Mi tarjeta digital está en construcción.</p>
+
+
+<body>
+
+
+<main class="card">
+
+
+  <!-- FOTO -->
+
+  <img
+    src="foto.jpeg"
+    alt="Ruben Jimenez"
+    class="photo"
+  >
+
+
+  <!-- LOGO GBM -->
+
+  <img
+    src="logo-gbm.png"
+    alt="GBM Dominicana"
+    class="logo-gbm"
+  >
+
+
+  <!-- NOMBRE -->
+
+  <h1>
+    Ruben Jimenez
+  </h1>
+
+
+  <!-- CARGO -->
+
+  <div class="role">
+
+    Business Developer | Cybersecurity
+
+  </div>
+
+
+  <!-- EMPRESA -->
+
+  <div class="company">
+
+    GBM Dominicana
+
+  </div>
+
+
+  <div class="divider"></div>
+
+
+  <!-- DESCRIPCION -->
+
+  <p class="description">
+
+    Impulsando soluciones de tecnología
+    y ciberseguridad orientadas a proteger,
+    fortalecer y transformar organizaciones
+    en un entorno digital en constante evolución.
+
+  </p>
+
+
+  <!-- BOTONES -->
+
+  <div class="buttons">
+
+
+    <!-- WHATSAPP -->
+
+    <a
+      href="https://wa.me/18097473637"
+      target="_blank"
+      class="button whatsapp"
+    >
+
+      💬 Contactar por WhatsApp
+
+    </a>
+
+
+    <!-- EMAIL -->
+
+    <a
+      href="mailto:rujimenez@gbm.net"
+      class="button"
+    >
+
+      ✉️ Enviar correo
+
+    </a>
+
+
+    <!-- TELEFONO -->
+
+    <a
+      href="tel:+18097473637"
+      class="button"
+    >
+
+      📞 Llamar
+
+    </a>
+
+
+    <!-- LINKEDIN -->
+
+    <a
+      href="https://www.linkedin.com/in/ruben-jimenez-cibersecurity/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="button linkedin"
+    >
+
+      in &nbsp; Ver perfil de LinkedIn
+
+    </a>
+
+
+    <!-- GUARDAR CONTACTO -->
+
+    <a
+      href="ruben-jimenez.vcf"
+      download
+      class="button contact"
+    >
+
+      👤 Guardar contacto
+
+    </a>
+
+
+  </div>
+
+
+  <!-- FOOTER -->
+
+  <div class="footer">
+
+    © 2026 Ruben Jimenez
+    · Business Developer
+    | Cybersecurity
+
+  </div>
+
+
+</main>
+
+
 </body>
+
 </html>
